@@ -1,3 +1,7 @@
+using Contact.API.Data;
+using Contact.API.Data.Interfaces;
+using Contact.API.Repositories;
+using Contact.API.Repositories.Interfaces;
 using Contact.API.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +36,14 @@ namespace Contact.API
             services.Configure<ContactDatabaseSettings>(Configuration.GetSection(nameof(ContactDatabaseSettings)));
 
             services.AddSingleton<IContactDatabaseSettings>(sp => sp.GetRequiredService<IOptions<ContactDatabaseSettings>>().Value);
+
+            services.AddTransient<IContactContext, ContactContext>();
+            services.AddTransient<IContactRepository, ContactRepository>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Contact API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +61,12 @@ namespace Contact.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact API V1");
             });
         }
     }

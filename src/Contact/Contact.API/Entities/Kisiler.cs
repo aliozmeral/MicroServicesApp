@@ -16,8 +16,8 @@ namespace Contact.API.Entities
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Firma { get; set; }
-        [BsonRepresentation(BsonType.ObjectId)]
-        public List<string> Iletisim { get; set; }
+        //[BsonRepresentation(BsonType.ObjectId)]
+       // public List<IletisimBilgileri> Iletisim { get; set; }
 
     }
 }
