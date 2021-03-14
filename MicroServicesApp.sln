@@ -5,9 +5,27 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE5E41AC-CE39-4111-9428-9AFA26A8EC20}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact", "Contact", "{ECB56810-20AB-4718-9FCC-6A4F46ED5ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API", "src\Contact\Contact.API\Contact.API.csproj", "{6619A207-A817-44C4-ADB5-734FC39857D6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6619A207-A817-44C4-ADB5-734FC39857D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6619A207-A817-44C4-ADB5-734FC39857D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6619A207-A817-44C4-ADB5-734FC39857D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6619A207-A817-44C4-ADB5-734FC39857D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECB56810-20AB-4718-9FCC-6A4F46ED5ADB} = {EE5E41AC-CE39-4111-9428-9AFA26A8EC20}
+		{6619A207-A817-44C4-ADB5-734FC39857D6} = {ECB56810-20AB-4718-9FCC-6A4F46ED5ADB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA8F70B-AA91-437C-B35C-3D8E63106EC1}
