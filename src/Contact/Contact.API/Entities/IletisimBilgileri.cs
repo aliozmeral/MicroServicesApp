@@ -9,9 +9,7 @@ namespace Contact.API.Entities
 {
     public class IletisimBilgileri
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+      
         public string BilgiTipi { get; set; }
 
         public string BilgiIcerik { get; set; }

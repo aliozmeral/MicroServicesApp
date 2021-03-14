@@ -13,14 +13,14 @@ ls
 	"Ad": "Ali",
 	"Soyad": "Veli",
 	"Firma": "XYZ Firma",
-	"Iletisim":[{"BilgiTipi": "Telefon","BilgiIcerik": "555-5555555"}]
+	"IletisimBilgileri":[{"BilgiTipi": "Telefon","BilgiIcerik": "555-5555555"}]
    },
    {
 	"UUID": "2d3606ea-d51c-4ce5-9687-a44bf79531d0",
 	"Ad": "Ayşe",
 	"Soyad": "Veli",
 	"Firma": "ABC Firma",
-	"Iletisim":[{"BilgiTipi": "Email","BilgiIcerik": "Email@email.com"}]
+	"IletisimBilgileri":[{"BilgiTipi": "Email","BilgiIcerik": "Email@email.com"}]
    }
 
 ]
