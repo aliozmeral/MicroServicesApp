@@ -1,0 +1,27 @@
+﻿docker pull mongo // mongodb docker install
+docker run -d -p 27017:27017 --name contact-mongo mongo // docker run
+docker exec -it contact-mongo /bin/bash //docker root access
+
+ls
+	mongo
+	show dbs
+	use ContactDb  --> db create
+	db.createCollection('Contacts')  --> collection create
+
+[ {
+	"UUID": "5f16a31d-4622-4a78-b9a0-48111fd6c1fc",
+	"Ad": "Ali",
+	"Soyad": "Veli",
+	"Firma": "XYZ Firma",
+	"Iletisim":[{"BilgiTipi": "Telefon","BilgiIcerik": "555-5555555"}]
+   },
+   {
+	"UUID": "2d3606ea-d51c-4ce5-9687-a44bf79531d0",
+	"Ad": "Ayşe",
+	"Soyad": "Veli",
+	"Firma": "ABC Firma",
+	"Iletisim":[{"BilgiTipi": "Email","BilgiIcerik": "Email@email.com"}]
+   }
+
+]
+
