@@ -16,7 +16,7 @@ namespace Contact.API.Entities
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Firma { get; set; }
-        public List<IletisimBilgileri> IletisimBilgileri { get; set; }
+        public IletisimBilgileri[] IletisimBilgileri { get; set; }
 
     }
 }
