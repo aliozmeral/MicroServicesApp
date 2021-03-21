@@ -13,10 +13,11 @@ namespace Contact.API.RabbitMQ
     {
         public void Sender()
         {
+            //Sample
             var email = new Report
             {
-                Konum = "adad",
-                KisiSayisi = 2,
+                Konum = "istanbul",
+                KisiSayisi = 1,
                 Durum = "Hazırlanıyor"
             };
 
